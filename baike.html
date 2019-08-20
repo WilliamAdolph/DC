@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<!--以移动设备为优先， 屏幕和设备的屏幕保持一致，初始缩放为100% 禁止用户缩放-->
+		<title></title>
+		<!--引入外部bootstrap的css文件-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<!--先引入外部的jQuery文件再引入外部的js文件-->
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/baike/baike.css"/>
+		<link rel="stylesheet" type="text/css" href="css/baike/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/baike/style.css"/>
+		<script src="js/baike/baike.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/baike/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/baike/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
+		<!--<style type="text/css">
+			[class*='col-md']{
+				border:solid 1px pink;
+			}
+		</style>-->
+		<title></title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!--头部-->
+			<div class="row head navbar-fixed-top">
+				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-12">
+					<p><a href="#"><img src="img/baike/dc2.png"/></a></p>
+				</div>
+				
+				<div class="col-md-8 col-sm-9 col-xs-12">
+					<ul class="nav list-inline list-unstyled">
+						<li><a href="home.html">首页</a></li>
+						<li><a href="news.html">动态</a></li>
+						<li><a href="shipin1.html">视频</a></li>
+						<li><a href="video.html">影视</a></li>
+						<li><a href="baike.html" style="color: #66AFE9;">百科</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div class="row head-m">
+				<div class="col-md-5 col-md-offset-1  col-sm-7 col-xs-6">
+					<ul class="list-inline list-unstyled">
+						<li><a href="hero.html">英雄</a></li>
+						<li><a href="fanpai.html">反派</a></li>
+						<li><a href="team.html">团队</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5  col-sm-5 col-xs-6">
+					<div class="pull-right">
+						<input type="text" value="" />
+						<button type="button" class="btn btn-default search" aria-label="Left Align">
+						 	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 slide-box">					
+					<div class="cd-slider-wrapper">
+						<ul class="cd-slider">
+							<li class="is-visible" id="slide0">
+								<div class="cd-half-block image"></div>
+								<div class="cd-half-block content">			
+									<div>
+										<h2 class="card-head">
+											<a href="#">蝙蝠侠的助手们——罗宾</a>
+										</h2>
+										<p class="buleline"></p>
+										<p class="text-detial">
+											<a href="#">
+												罗宾作为蝙蝠侠的少年助手，共有数代。首次登场于1940年4月的第38期《侦探漫画》，创作者为比尔·芬格、鲍勃·凯恩和杰瑞·罗宾逊。其目...
+											</a>
+										</p>
+										<button class="but-eye"><a href="#">阅读全文</a></button>
+									</div>
+								</div>
+							</li> <!-- .cd-half-block.content -->
+							<li id="slide1">
+								<div class="cd-half-block image"></div>
+								<div class="cd-half-block content light-bg">
+									<div>
+										<h2 class="card-head">
+											<a href="#">斯蒂芬妮·布朗：正史中唯一的女罗宾</a>
+										</h2>
+										<p class="buleline"></p>
+										<p class="text-detial">
+											<a href="#">
+												斯蒂芬妮·布朗（Stephanie Brown）曾是第四代罗宾，也是正史中唯一一位女罗宾，现在的身份代号是“乱局者”。初次登场于1992年8月的DC漫画...
+											</a>
+										</p>
+										<button class="but-eye"><a href="#">阅读全文</a></button>
+									</div>
+								</div> <!-- .cd-half-block.content -->
+							</li>
+							<li id="slide2">
+								<div class="cd-half-block image"></div>
+								<div class="cd-half-block content">
+									<div>
+										<h2 class="card-head">
+											<a href="#">斯蒂芬妮·布朗：正史中唯一的女罗宾</a>
+										</h2>
+										<p class="buleline"></p>
+										<p class="text-detial">
+											<a href="#">
+												斯蒂芬妮·布朗（Stephanie Brown）曾是第四代罗宾，也是正史中唯一一位女罗宾，现在的身份代号是“乱局者”。初次登场于1992年8月的DC漫画...
+											</a>
+										</p>
+										<button class="but-eye"><a href="#">阅读全文</a></button>
+									</div>
+								</div> <!-- .cd-half-block.content -->
+							</li>
+							<li id="slide3">
+								<div class="cd-half-block image"></div>
+								<div class="cd-half-block content">
+									<div>
+										<h2 class="card-head">
+											<a href="#">蝙蝠侠的助手们——罗宾</a>
+										</h2>
+										<p class="buleline"></p>
+										<p class="text-detial">
+											<a href="#">
+												罗宾作为蝙蝠侠的少年助手，共有数代。首次登场于1940年4月的第38期《侦探漫画》，创作者为比尔·芬格、鲍勃·凯恩和杰瑞·罗宾逊。其目...
+											</a>
+										</p>
+										<button class="but-eye"><a href="#">阅读全文</a></button>
+									</div>
+								</div> <!-- .cd-half-block.content -->
+							</li>
+							<li id="slide4">
+								<div class="cd-half-block image"></div>
+								<div class="cd-half-block content">
+									<div>
+										<h2 class="card-head">
+											<a href="#">蝙蝠侠的助手们——罗宾</a>
+										</h2>
+										<p class="buleline"></p>
+										<p class="text-detial">
+											<a href="#">
+												罗宾作为蝙蝠侠的少年助手，共有数代。首次登场于1940年4月的第38期《侦探漫画》，创作者为比尔·芬格、鲍勃·凯恩和杰瑞·罗宾逊。其目...
+											</a>
+										</p>
+										<button class="but-eye"><a href="#">阅读全文</a></button>
+									</div>
+								</div> <!-- .cd-half-block.content -->
+							</li>
+							<li id="slide5">
+								<div class="cd-half-block image"></div>
+								<div class="cd-half-block content">
+									<div>
+										<h2 class="card-head">
+											<a href="#">蝙蝠侠的助手们——罗宾</a>
+										</h2>
+										<p class="buleline"></p>
+										<p class="text-detial">
+											<a href="#">
+												罗宾作为蝙蝠侠的少年助手，共有数代。首次登场于1940年4月的第38期《侦探漫画》，创作者为比尔·芬格、鲍勃·凯恩和杰瑞·罗宾逊。其目...
+											</a>
+										</p>
+										<button class="but-eye"><a href="#">阅读全文</a></button>
+									</div>
+								</div> <!-- .cd-half-block.content -->
+							</li>
+						</ul> <!-- .cd-slider -->
+					</div>
+							
+				</div>	
+			</div>
+			
+			
+			<div class="row main">
+				<div class="col-md-3 col-md-offset-1 card-big col-sm-4">
+					<h3><img src="img/baike/hero.gif"/></h3>
+					<!--蝙蝠侠-->
+					<div class="">
+						<ul class="list-unstyled">
+							<li>
+								<p class="batman">世上最伟大的侦探</p>
+								<div class="card">
+									<p class="bianfu"><a href="#">蝙蝠侠</a></p>
+									<p class="b-detail"><a href="#">本名布鲁斯·韦恩，一到夜晚，他就是令罪犯闻风丧胆的黑暗骑士-蝙蝠侠。</a></p>
+									<p class="bianfu-pho"><img src="img/baike/b.jpg" class="img-responsive"/></p>
+								</div>
+							</li>
+						</ul>
+					</div>	
+					
+					<!--超人-->
+					<div class="superman">
+						<ul class="list-unstyled">
+							<li>
+								<p class="batman">钢铁之躯</p>
+								<div class="card">
+									<p class="bianfu"><a href="superman.html">超人</a></p>
+									<p class="b-detail"><a href="#">每在危难时刻，便穿上蓝色紧身衣，披上红色斗蓬，化身超人挺身而出，行侠仗义，拯救世人。</a></p>
+									<p class="bianfu-pho"><a href="superman.html"><img src="img/baike/s.jpg" class="img-responsive"/></a></p>
+								</div>
+							</li>
+						</ul>
+					</div>			
+					
+					<!--神奇女侠-->
+					<div class="superman">
+						<ul class="list-unstyled">
+							<li>
+								<p class="batman">天堂岛的公主</p>
+								<div class="card">
+									<p class="bianfu"><a href="#">神奇女侠</a></p>
+									<p class="b-detail"><a href="#">众神之王宙斯和天堂岛亚马逊女王希波吕忒的私生女，拥有半神血统。女性超级英雄的代表人物。</a></p>
+									<p class="bianfu-pho"><img src="img/baike/w.jpg" class="img-responsive"/></p>
+								</div>
+							</li>
+						</ul>
+					</div>		
+					
+					<!--闪电侠-->
+					<div class="superman">
+						<ul class="list-unstyled">
+							<li>
+								<p class="batman">世上最快的人</p>
+								<div class="card">
+									<p class="bianfu"><a href="#">闪电侠</a></p>
+									<p class="b-detail"><a href="#">巴里与神速力相连，速度快到能穿越时空，曾经因为穿越时间改变历史，而造成DC宇宙重启。</a></p>
+									<p class="bianfu-pho"><img src="img/baike/f.jpg" class="img-responsive"/></p>
+								</div>
+							</li>
+						</ul>
+					</div>	
+					
+					<!--绿灯侠-->
+					<div class="superman">
+						<ul class="list-unstyled">
+							<li>
+								<p class="batman">最伟大的绿灯侠</p>
+								<div class="card">
+									<p class="bianfu"><a href="#">绿灯侠</a></p>
+									<p class="b-detail"><a href="#">哈尔·乔丹原本是飞机公司的试飞员，因其诚实、勇敢和无所畏惧的性格，被绿灯戒指选中。</a></p>
+									<p class="bianfu-pho"><img src="img/baike/g.jpg" class="img-responsive"/></p>
+								</div>
+							</li>
+						</ul>
+					</div>	
+					
+					<!--海王/水行侠-->
+					<div class="superman">
+						<ul class="list-unstyled">
+							<li>
+								<p class="batman">七海之主</p>
+								<div class="card">
+									<p class="bianfu"><a href="#">海王/水行侠</a></p>
+									<p class="b-detail"><a href="#">是亚特兰蒂斯女王和慈恩港灯塔看守人的私生子，用友操控海洋生物的超能力。</a></p>
+									<p class="bianfu-pho"><img src="img/baike/a.jpg" class="img-responsive"/></p>
+								</div>
+							</li>
+						</ul>
+					</div>	
+					
+					<!--钢骨-->
+					<div class="superman">
+						<ul class="list-unstyled">
+							<li>
+								<p class="batman">机械之身，人类之心</p>
+								<div class="card">
+									<p class="bianfu"><a href="#">钢骨</a></p>
+									<p class="b-detail"><a href="#">一次意外，造就了他电子人的身躯，从此可以控制几乎所有电子设备，黑入目标系统。</a></p>
+									<p class="bianfu-pho"><img src="img/baike/c.jpg" class="img-responsive"/></p>
+								</div>
+							</li>
+						</ul>
+					</div>	
+					
+				</div>
+				
+				<!--图头-->
+				<div class="col-md-7 hero-p col-sm-8 col-xs-12">
+					<p class="hero-pho"><a href="#"><img src="img/baike/hero.png" class="img-responsive"/></a></p>
+				</div>
+				
+				<!--第一列-->
+				<div class="col-md-3 hero-card col-sm-4 col-xs-12">
+					<ul class="grid">
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/1-1PRF91K2262.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>绿灯侠</h3>
+						        <span>解析DCEU中的绿灯侠，曾在《钢铁</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					     <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/21.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>英雄</h3>
+						        <span>提姆·德雷克：蝙蝠侠的第三任助</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					     <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/22.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>英雄</h3>
+						        <span>夜翼——迪克格雷森</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					     <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/23.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>蝙蝠侠</h3>
+						        <span>中国蝙蝠侠——王柏熙</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					</ul>
+				</div>
+				
+				<!--第二列-->
+				<div class="col-md-3 col-md-offset-1 hero-card col-sm-4 col-xs-12">
+					<ul class="grid">
+					   <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/24.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>蝙蝠侠</h3>
+						        <span>蝙蝠侠的助手们——罗宾</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/25.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>超人</h3>
+						        <span>超人的装甲：强如超人也需要装备</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/26.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>超人</h3>
+						        <span>中国超人——孔克南</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/27.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>闪电侠</h3>
+						        <span>中国闪电侠——艾弗里·何</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					</ul>
+				</div>
+				
+				<!--团队-->
+				<div class="col-md-7 col-sm-8 team">
+					<p class="hero-pho1"><a href="#"><img src="img/baike/team.png" class="img-responsive"/></a></p>
+					<div class="">
+						<a href="#"><img src="img/baike/1.jpg" class="img-responsive"/></a>
+					</div>
+					<!--<div class="team-text">
+						<div class="">
+							<div>
+								<div class="team-head pull-left"><a href="#">正义联盟</a></div>
+								<div class="team-link pull-right">
+									<span><a href="#">正义联盟</a></span>
+								</div>
+							</div>
+							
+						</div>
+						<div class="link-text">
+							<p><a href="#">漫画史上第一支真正意义上的超级英雄战队，建立于白银时代，与建立于黄金时代的英雄团体美国正义会社有着深厚的渊源被称为是由“世界上最伟大的超级英雄”组成的团队...</a></p>
+						</div>
+					</div>-->
+				</div>
+				
+				<!--反派-->
+				<!--图头-->
+				<div class="col-md-7 hero-p col-sm-8 col-xs-12">
+					<p class="hero-pho"><a href="#"><img src="img/baike/super.png" class="img-responsive"/></a></p>
+				</div>
+				
+				<!--第一列-->
+				<div class="col-md-3 hero-card col-sm-4 col-xs-12">
+					<ul class="grid">
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/22.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>反派</h3>
+						        <span>小丑</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					     <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/z.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>反派</h3>
+						        <span>提姆·德雷克：蝙蝠侠的第三任助</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					     <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/22.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>英雄</h3>
+						        <span>夜翼——迪克格雷森</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					     <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/23.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>蝙蝠侠</h3>
+						        <span>中国蝙蝠侠——王柏熙</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					</ul>
+				</div>
+				
+				<!--第二列-->
+				<div class="col-md-3 col-md-offset-1 hero-card col-sm-4 col-xs-12">
+					<ul class="grid">
+					   <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/24.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>蝙蝠侠</h3>
+						        <span>蝙蝠侠的助手们——罗宾</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/25.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>超人</h3>
+						        <span>超人的装甲：强如超人也需要装备</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/26.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>超人</h3>
+						        <span>中国超人——孔克南</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					    <li class="cs-style-5">
+						    <figure>
+						        <div><img src="img/baike/27.jpg" alt="img01"></div>
+						        <figcaption>
+						        <h3>闪电侠</h3>
+						        <span>中国闪电侠——艾弗里·何</span>
+						        <a href="#/1115632-Camera">Take a look</a>
+						        </figcaption>
+						    </figure>
+					    </li>
+					</ul>
+				</div>				
+			</div>
+		
+			<!--底部-->
+			<div class="row footer" >
+				<div class="col-lg-offset-2 col-lg-2 col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 col-xs-12">
+					
+						<div class="footer-1 pull-left">
+							<img src="img/baike/dc1.jpg" class="img-responsive"/>
+						</div>
+				</div>	
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="footer-2 pull-left ">
+						<a class="btn-search2"></a>
+						<input type="text" name="" id="src2" value="" placeholder="搜索"/>
+						<ul id="movie">
+							<li>
+								<a href="">#秘密六人组</a>
+								<a href="">#DC美剧</a>
+								<a href="">#DC电影</a》
+							
+							</li>
+							<li>
+								<a href="">#自杀小队</a>
+								<a href="">#哥谭</a>
+								<a href="">#蝙蝠侠</a>
+								<a href="">#泰坦</a>
+							</li>
+							<li>
+								<a href="">#预告片</a>
+								<a href="">#海王	</a>
+								<a href="">#罗伯</a>
+								<a href="">#氪星</a>
+							</li>
+							<li>
+								<a href="">#猛禽小队</a>
+								<a href="">#DC动画</a>
+								<a href="">#哈莉奎因</a>
+							</li>
+							<li>
+								<a href="">#黑金丝雀</a>	
+								<a href="">#女猎手</a>
+								<a href="">#小丑</a>
+								<a href="">#逐星女</a>
+							</li>
+							<li>
+								<a href="">#正义联盟</a>
+								<a href="">#超人</a>
+							</li>
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+					<div class="footer-3 pull-left">
+						<h2>ABOUT US</h2>
+						<ul id="movie" class="line">
+							<li>
+								<a href="">关于DC中文网</a>																
+							</li>
+							
+							<li><a href="">投稿须知</a></li>
+							
+							<li><a href="">免责声明</a></li>
+							
+							<li><a href="">商务合作</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+					<div class="footer-4 pull-left">
+						<h2>LINK</h2>
+						<ul id="movie" class="line">
+							<li>
+								<a href="">动态</a>																
+							</li>
+						
+							<li><a href="">视频</a></li>
+							
+							<li><a href="">影视</a></li>
+							
+							<li><a href="">百科</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="row" style="background:#061f33 ;">
+				<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
+					<div class="bottom a">
+						<p style="color: #5f5f6el;">Copyright ? DC中文网 All rights reserved.</p>
+						<p><a href="">湘ICP备18000090号</a></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+			
+		
+			
+		<!--100%-->
+		</div>
+	
+	</body>
+</html>

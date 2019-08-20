@@ -1,0 +1,220 @@
+.nav-big{
+	
+}
+
+.wiki-big{
+	margin-top: 5%;
+	width: 60%;
+	margin-left: 3%;
+	float: left;
+}
+@media (max-width: 767px) {
+	 .wiki-big{
+	margin-top: 5%;
+	width: 100%;
+	margin: 0 3%;
+}
+	 
+}
+
+.wiki-pho{
+	overflow: hidden;
+}
+.wiki-caidan{
+	border-top: 2px solid black;
+}
+.wiki-caidan ul{
+	margin-top: 5%;
+	margin-bottom: 3%;
+	font-size: 16px;
+}
+.wiki-caidan ul a:link,.wiki-caidan ul a:visited{
+	color: #929191;
+	text-decoration: none;
+}
+.wiki-caidan ul a:hover{
+	color: darkslateblue;
+}
+
+
+/*轮播*/
+.wiki-slide{
+	padding: 0px;
+}
+.item-p em{
+	display: block;
+    width: 25%;
+    height: 6px;
+    background: #366df0;
+    margin: 17px auto;
+}
+
+
+/*组图*/
+.pho-big{
+	padding: 0px;
+}
+.pho-xbig{
+	padding: 0px;
+	margin-top: 20px;
+}
+.panel-text h5{color: black;font-weight: 700;font-size: 16px;margin-left: 5%;}
+.panel-text p{font-size:  12px;margin: 0 5%;line-height: 25px;color: #666;}
+.panel-text a{text-decoration: none;}
+.panel-body a img{position: relative;}
+/*浮动*/
+.panel-body{ width: 100%;  
+                transform: scale(1);  
+                transition: all 1s ease;}
+.panel-body:hover{transform: scale(1.1); transition: all 1s ease;}
+.star-tab{
+	margin: 5% 15%;
+}
+.star-tab em{
+	display: inline-block;
+    width: 17px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(../../img/baike/star_icon.png) no-repeat 0 -135px;
+}
+.star-tab a:link,.star-tab a:visited{
+	border: 1px solid #bfbfbf;
+	padding: 2px 2px;
+	color: #282828;
+	text-decoration: none;
+}
+.star-tab a:hover{
+	color: blue;
+}
+
+
+
+
+
+.wiki-small{
+	width: 32%;
+	margin-top: 5%;
+	margin-left: 4%;
+	float: left;
+}
+.wiki-right{
+	padding-left: 5%;
+	padding: 0px;
+}
+.wiki-head{
+	padding: 0px;
+	
+}
+.wiki-p{
+	margin-top: 20px;
+	height: 90%;
+	border-bottom: 1px solid gainsboro;
+}
+.wiki-head p{
+	margin-top: 5%;
+}
+.wiki-head em{
+	display: inline-block;
+    width: 17px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(../../img/baike/star_icon.png) no-repeat 0 -135px;
+    margin-top: 5%;
+}
+h4 a:link,h4 a:visited{
+	color: black;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	text-decoration: none;
+}
+h4 a:hover{
+	color: blue;
+}
+.wiki-head p a:link,.wiki-head p a:visited{
+	color: #666;
+	text-decoration: none;
+}
+.wiki-head p a:hover{
+	color: blue;
+}
+
+/*右三-----------------------------*/
+.hostlist{
+	padding-top: 5%;
+}
+.hostlogo{
+	padding-top: 50px;
+}
+.hosttxt-li{
+	padding: .5rem 0;
+	border-bottom: 1px dotted #c1c1c1;
+}
+.txt-div{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+}
+.txt-div>b{
+	font-size: 2rem;
+	font-weight: 900;
+	margin-right: .5rem;
+}
+.txt-div>i{
+	font-size: 1.8rem;
+	margin-right: 1rem;
+}
+.txt-div>.title{
+	font-size: 1.5rem;
+	color: #666;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.txt-div-hover{
+	padding: 1rem 0;
+	display: none;
+}
+.num{
+	position: relative;
+}
+.num>em{
+	position: absolute;
+	top: 0;color: #FFFEFE;
+	padding: .2rem .5rem;
+	background: #31708F;
+}
+.tagword{
+	color: #666;
+	font-size: 1rem;
+	
+}
+.title{
+	font-weight: bold;
+}
+.film-content h3 a:link,.film-content h3 a:visited{
+	color: black;
+	text-decoration: none;
+}
+.film-content h3 a:hover{
+	color: blue;
+}
+.li-text-txt a:link,.li-text-txt a:visited{
+	color: #666666;
+	text-decoration: none;
+}
+.hero-man{
+	padding-bottom: 15px;
+	border-bottom: 1px solid gainsboro;
+}
+.hero-man img{
+	padding-right: 10px;
+}
+.hero-man img:hover{
+	border: 1px solid blue;
+}
+.hero-man p a:link,.hero-man p a:visited{
+	text-decoration: none;
+	color: #666;
+}

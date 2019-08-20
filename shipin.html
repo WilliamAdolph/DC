@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>DC中文网_视频</title>
+		<script type="text/javascript" src="DC1/slide/js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/shipin1.js" ></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/shipin.css" />
+		<!--轮播图引用-->
+		<link rel="stylesheet" href="DC1/slide/less/index.css">
+	    <link rel="stylesheet" href="DC1/slide/less/slide.css">
+	    <link rel="stylesheet" href="DC1/slide/less/index.css">
+	    <script type="text/javascript" src="DC1/slide/js/slide.min.js" ></script>
+	    <script>
+		    $(function(){
+		        //3d
+		        $('#slide3d').slideCarsousel({slideType:'3d',indicatorEvent:'mouseover'});
+		        //2d
+		        var  sliderDescArr=[],i=0,len=10;
+		        for(;i<len;i++){
+		            sliderDescArr.push(new Array(10).join(''+i));
+		        }
+		        $('#sliderDesc').text(sliderDescArr[0]);
+		        $('#slide2d').slideCarsousel({callbackFunc:function(index){
+		            $('#sliderDesc1').text(sliderDescArr[index]);
+		        }});
+		    });
+		</script>
+		<!--媒体查询-->
+		<style>
+			/*top-1*/
+			@media screen and (max-width: 835px) {
+				.top-img img{width:100%;height:55px;}
+			}
+			@media screen and (max-width: 570px) {
+				.top-1 .top-ul1{position:fixed;width:100%;left:10%;z-index:2000;background:#242424;}
+				.top-img{display:none;}
+			}@media screen and (max-width: 450px) {
+				.top-1 .top-ul1{left:5%;}
+				.top-img{display:none;}
+			}@media screen and (max-width: 350px) {
+				.top-1 .top-ul1{left:2%;}
+				.top-img{display:none;}
+			}
+			/*top-2*/
+			@media screen and (max-width: 357px) {
+				.top-2-2{width:0%;}
+				.top2-input{width:50%;}
+			}
+		</style>
+
+	</head>
+	<body>
+		<!--标题-->
+		<div class="container-fluid">
+			<!--头部导航栏-->
+			<div class="top">
+				<!--导航栏1-->
+				<div class="top-1 pull-left header-master">
+					<!--导航栏图片-->
+					<div class="top-img">
+						<img src="img/DC-logo.png"/>
+					</div>
+					<div class="h55" style="width:10%;float:left;"></div>
+					<!--导航栏1ul-->
+					<ul class="top-ul1">
+						<li><a>首页</a></li>
+						<li><a>动态</a></li>
+						<li><a>视频</a></li>
+						<li><a>影视</a></li>
+						<li><a>百科</a></li>
+					</ul>
+				</div>
+				<!--导航栏2-->
+				<div class="top-2 pull-left">
+					<!--导航栏2ul-->
+					<ul class="top-ul2">
+						<li><a>预告</a></li>
+						<div class="w15 h35 pull-left"></div>
+						<li><a>采访&花絮</a></li>
+						<div class="w15 h35 pull-left"></div>
+						<li><a>图集</a></li>
+					</ul>
+					<div class="w15 h35 top-2-2" style="float:left;"></div>
+					<!--导航栏2input-->
+					<div class="top2-input">
+						<form>
+							<div class="form-group" style="height:35px;margin:0;">
+								<div class="input-group" style="height:35px;width:100%;	">
+									<input class="" type="search" class="form-control " name="" id="" value=""  style="width:70%;"/>
+									<input type="submit" value="" class="btn-default"  style="width:25%;height:31px;margin:2px 0 0 1px;border:none;background:#333333;background:url(img/searchBtn.jpg)no-repeat;background-size:35px 33px;"/>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--轮播图-->
+			<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="video">
+					<div class="bg">
+						<div class="banner">
+							<div id="slide3d" class="slide-carousel slide-3d">
+					            <ul  class="item-list clearfix" style="padding:0;">
+					                <li class="item0">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide1.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip6" style="display:none;">
+					                        	<a>《氪星》“猛男”罗伯定妆照放出</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item1">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide2.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip7" style="display:none;">
+					                        	<a>DC动画《哈莉奎茵》首款预告</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item2">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide3.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip1" style="display:none;">
+					                        	<a>《泰坦》主角预告及海报放出</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item3">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide4.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip2" style="display:none;">
+					                        	<a>《小丑》正常到邪恶的转变</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item4">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide5.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip3" style="display:none;">
+					                        	<a>《泰坦》：当新罗宾遇上前罗宾</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item5">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide6.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip4" style="display:none;">
+					                        	<a>《泰坦》将在国庆后开播并放出海报</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item6">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide7.jpg" alt="">
+					                        </a>
+					                         <div class="slide-tip5" style="display:none;">
+					                        	<a>《爱乐之城》的高司令演“蝙蝠侠”？</a>
+					                        </div>
+					                    </div>
+					                </li>
+					            </ul>
+					            <div class="indicator-list items">
+					                <a href="javascript:void(0);" data-slide-index="0" class="selected"><img src="img/slide3.jpg" class="slide-3"/></a>
+					                <a href="javascript:void(0);" data-slide-index="1"><img src="img/slide4.jpg" class="slide-4"/></a>
+					                <a href="javascript:void(0);" data-slide-index="2"><img src="img/slide5.jpg" class="slide-5"/></a>
+					                <a href="javascript:void(0);" data-slide-index="3"><img src="img/slide6.jpg" class="slide-6"/></a>
+					                <a href="javascript:void(0);" data-slide-index="4"><img src="img/slide7.jpg" class="slide-7"/></a>
+					                <a href="javascript:void(0);" data-slide-index="5"><img src="img/slide1.jpg" class="slide-1"/></a>
+					                <a href="javascript:void(0);" data-slide-index="6"><img src="img/slide2.jpg" class="slide-2"/></a>  
+					            </div>
+					            <!--<ul class="items">
+					            	<li><div><img src="img/slide3.jpg"/></div></li>
+					            	<li><div><img src="img/slide4.jpg"/></div></li>
+					            	<li><div><img src="img/slide5.jpg"/></div></li>
+					            	<li><div><img src="img/slide6.jpg"/></div></li>
+					            	<li><div><img src="img/slide7.jpg"/></div></li>
+					            	<li><div><img src="img/slide1.jpg"/></div></li>
+					            	<li><div><img src="img/slide2.jpg"/></div></li>
+					            </ul>-->
+					        </div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<!--正文-->
+		<div class="container">
+			<div class="row">
+				<div class="trailer">
+					<img src="img/trailer.png"/>
+					<div class="videoSlider por">
+						<ul class="selfShowUl" style="padding:0;position: absolute; left: 0px; width: 7236px; transition-property: none; transition-duration: 400ms; transition-timing-function: ease-in-out;">
+							<li class="fl por " style="">
+								<div class="fl">
+									<img src="img/slide2.jpg"/>
+								</div>
+								<span class="poa" style="opacity: 0;"></span>
+								<p><strong>DC动画《哈莉奎茵》首款预告</strong></p>
+							</li>
+							<li class="fl por ">
+								<div class="fl">
+									<img src="img/slide3.jpg"/>
+								</div>
+								<span class="poa" style="opacity: 0;"></span>
+								<p><strong>《泰坦》新预告放出，将会面向全球播出</strong></p>
+							</li>
+							<li class="fl por ">
+								<div class="fl">
+									<img src="img/slide1.jpg"/>
+								</div>
+								<span class="poa" style="opacity: 0;"></span>
+								<p><strong>《氪星》“猛男”罗伯定妆照放出</strong></p>
+							</li>
+							<li class="fl por ">
+							
+							</li>
+							<li class="fl por ">
+							
+							</li>
+							<li class="fl por ">
+							
+							</li>
+							<li class="fl por ">
+							
+							</li>
+							<li class="fl por ">
+							
+							</li>
+							<li class="fl por " style="">
+							
+							</li>
+							<li class="fl por  switchable-cloned">
+							
+							</li><li class="fl por  switchable-cloned">
+							
+							</li><li class="fl por  switchable-cloned">
+							
+							</li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

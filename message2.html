@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="DC1/slide/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/message2.js" ></script>
+		<script type="text/javascript" src="js/vue.min.js" ></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/message2.css" />
+	</head>
+	<body>
+		<div id="app" >
+			<!-- 页面上半部分-->
+			<div class="container-fluid" style="padding:0;">
+				<div class="admin">
+					<div class="name"><p>William</p></div>
+					<!--<div class="slide"></div>-->
+					<div class="picture">
+						
+					</div>
+					<div class="ad">
+						<div class="glyphicon glyphicon-cog pointer" style=""></div>
+						<div class="glyphicon glyphicon-envelope pointer" style=""></div>
+						<div class="pointer" style="width:17%;height:45px;padding-top:0px;margin-top:3px;">
+							<img src="img/timg.jpg" style="width:100%;height:100%;border-radius:20px;"/>
+						</div>
+						<a class="exit" style="height:100%;float:left;line-height:3.5;margin-left:10px;color:#FFFFFF;" href="azmind_3_xd/index.html">退出</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<a style="width:100px;height:50px;position:absolute;left:6.7%;top:8.5%;line-height:3;color:#0000FF;" class="back" onclick="window.open('houtai.html','_self')"><strong style="font-weight:bolder;font-size:20px;height:100%;width:30%;position:absolute;left:-19%;line-height:2.2;"><</strong> 返回</a>
+				<div class="panel panel-primary" style="margin:5%;">
+		          	<div class="panel-body form-inline">
+		                <input type="button" class="btn btn-primary" value="添加" style="float: right;outline:0;">
+		          	</div>
+	          
+			        	<!--下半部分--> 
+			          
+				        <table class="table table-striped table-hover">
+				        <thead>
+				            <tr>
+				            	<th></th>
+				                <th>昵称</th>
+				                <th>验证码</th>
+				                <th style="width:200px;padding-left:10px;">手机号</th>
+				                <th>状态</th>
+				                <th>上次登录时间</th>
+				                <th>&nbsp;&nbsp;管理操作</th>
+				            </tr>
+				        </thead>
+				        <tbody>
+				            <tr v-for=" item in list" :key="item.id">
+				            	<td><img></td>
+				                <td>{{item.id}}</td>
+				                <td>{{item.pwd}}</td>
+				                <td>{{item.email}}</td>
+				                <td class="state">{{item.name}}</td>
+				                <td>{{item.ctime}}</td>
+				                <td><a style="text-decoration:none;" href="">编辑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a style="text-decoration:none;cursor:pointer;" class="del">删除</a></td>
+				            </tr>
+				        </tbody>
+				    </table>
+			    </div>
+		    </div>
+		</div>
+		<script>
+			var vm = new Vue({
+				el:'#app',
+				data:{
+					list:[
+					{img:'img/dc1.jpg',id:"William",name:'正常',email:"15363381234",ctime:'2016-10-17 20:12:00',pwd:513823,},
+					{id:"Bill",name:'正常',email:"15363381235",ctime:'2017-11-12 23:12:00',pwd:549612},
+					{id:"Tom",name:'封停',email:"15363383415",ctime:'2018-10-17 12:12:00',pwd:454063},
+					{id:"White",name:'正常',email:"15363387891",ctime:'2016-10-17 13:12:00',pwd:165151},
+					{id:"Adolph",name:'封停',email:"15363385156",ctime:'2018-10-17 12:12:00',pwd:654978},
+					{id:"Mary",name:'正常',email:"15363316515",ctime:'2018-10-17 12:12:00',pwd:126164},
+					{id:"Tim",name:'正常',email:"15363393416",ctime:'2018-10-17 12:12:00',pwd:115116},
+					{id:"john",name:'正常',email:"15363395415",ctime:'2018-10-17 12:12:00',pwd:156165},
+					{id:"Shelly",name:'封停',email:"15363165115",ctime:'2018-10-17 12:12:00',pwd:165165},
+					{id:"Lisa",name:'正常',email:"15363383575",ctime:'2018-10-17 12:12:00',pwd:138311},
+					{id:"Williamson",name:'封停',email:"15361651423",ctime:'2018-10-17 12:12:00',pwd:156156},
+					{id:"Walker",name:'正常',email:"15363156459",ctime:'2018-10-17 12:12:00',pwd:651651},
+					{id:"Hello",name:'正常',email:"15361651415",ctime:'2018-10-17 12:12:00',pwd:198783},
+					]
+				},methods:{
+					
+				}
+			})
+		</script>
+	</body>
+</html>

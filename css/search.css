@@ -1,0 +1,91 @@
+ul li{list-style: none;}
+ul,li{padding: 0px;margin: ;}
+a{text-decoration: none;}
+
+.head{position: relative;top: 0px;}
+.header ul{float: left;}
+.header ul li{float: left;}
+.header{max-width: 1200px;position: relative;top: 0px;}
+
+.nav1 a{color: white;font-size: 19px;font-weight: 700;text-decoration: none;}
+.nav1 li{padding: 0 40px;height: 55px;line-height: 55px;}
+.search{}
+.search a {position: relative;width: 46px;height: 46px;display: block;text-align: center;background:url(../img/background.png) 0px -85px;margin-top: 5px;}
+.btn-search{float: right;position: absolute;right: 0px;z-index: 100;}
+#src{overflow: hidden;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    height: 44px;
+    border: solid 1px red;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    display: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 175px;
+    }
+.nav1 a:hover,.nav1 a:active {
+    color: red;  
+    cursor: pointer;
+}
+
+
+.list{background:#f1f1f1;}
+.adl{margin-bottom: 35px;}
+.h1{font-weight: 700;margin-top: 50px;}
+.channel{margin-bottom: 10px;}
+.channel a{background: #061f33;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    padding: 0 10px;
+    }
+    
+    
+.title{    
+	border-bottom: solid 1px #d4d4d4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+ }    
+.h2{font-size: 16px;
+    color: #061f33;}  
+.title a{color: #061f33;text-decoration: none;}  
+.title a:hover{color: #366DF0;}
+
+.sign{
+	font-size: 14px;
+    color: #9b9b9b;
+    margin-bottom: 15px;
+    }
+.text a{color: red;}    
+
+.right-top{margin-bottom: 10px}
+.right-top span{
+	background: #1185d8;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    padding: 0 10px;
+    }
+.hotlist a{text-decoration: none;color: #000;}
+.hotlist a:hover{color: #366DF0;}
+.hotlist h2{
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 18px;
+    }
+.time{font-size: 12px;color: #9b9b9b;display: block;}
+.hotlist li {
+    display: block;
+    border-bottom: solid 1px #f5f5f5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    word-break: break-all;
+   }
+   
+.topic{float: left;}
+.topic li{float: left;margin-left: 10px;margin-bottom: 10px;}
+.topic a{color: #9f9fa7;text-decoration: none;}
+.topic a:hover{color: #366DF0;}

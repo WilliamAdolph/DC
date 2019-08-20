@@ -1,0 +1,302 @@
+.display{
+	display: none;
+}
+body{
+	background: #061f33;
+}
+/*头部*/
+.container-fluid{
+	/*padding: 0px;*/
+}
+.head{
+	background: #061f33;
+}
+.head p{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.head li{
+	line-height: 55px;
+	float: left;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	margin-left: 4%;
+}
+.head li a,.head li a:visited{
+	color: white;
+}
+.nav li a:hover{
+	background: #061f33;
+	color: red;
+}
+/*二级菜单栏*/
+.head-m{
+	background: #222a35;
+}
+.head-m ul{
+	margin-bottom: 0px;
+}
+.head-m li{
+	line-height: 35px;
+	font-size: 16px;
+	margin-right: 7%;	
+}
+.head-m li a,.head-m li a:visited{
+	color: #b1bcce;
+}
+.head-m input{
+	padding: 5px 5px;
+	float: left;
+}
+.head-m ul a,.head-m ul a:visited{
+	color: #b1bcce;
+	text-decoration: none;
+}
+.head-m ul a:hover{
+	color: orangered;
+}
+.search{
+	float: left;
+}
+
+/*大超人*/
+.sur-big{
+	height: 100%;
+	float: left;
+	z-index: -10;
+}
+.bg{
+	position: fixed;
+    margin: 0 auto;
+    min-height: 530px;
+    width: 100%;
+    margin-top: -70px;
+    z-index: -10;
+}
+.bg-img{
+	position: relative;
+	overflow: hidden;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    margin-left: -20%;
+    height: 630px;
+}
+.bg-img img{
+    display: block;
+}
+.sur-head{
+	position: absolute;
+	top: 0;
+	color: white;
+	left: 50%;
+	top: 10%;
+}
+.sur-head h1{
+	font-weight: bolder;
+	font-size: 60px;
+}
+.gundong{
+	font-size: 55px;
+}
+
+.about-big{
+	margin: 0px;
+}
+.about{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: white;
+}
+.big-about{
+	position: relative;
+}
+.sur-head1{
+	color: black;
+}
+.sur-head1 h1{
+	font-weight: bolder;
+	font-size: 55px;
+}
+.gundong1{
+	font-size: 40px;
+	width: 40%;
+}
+.jieshao{
+	margin-top: 60px;
+}
+.jieshao-pho{
+	float: left;
+	width: 40%
+}
+.jieshao-pho img{
+	width: 100%;
+}
+.ziliao{
+	/*padding-top: 20px;*/
+	float: left;
+	margin-left: 4%;
+	width: 50%;
+}
+.daibiao{
+}
+.daibiao span{
+	font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+   .daibiao span{
+	font-size: 14px;
+	}
+}
+@media screen and (max-width: 394px) {
+   .daibiao span{
+	font-size: 10px;
+	}
+	.progress{
+	margin-top: 10px;
+	height: 5px;
+	}
+}
+
+.progress{
+	margin-top: 10px;
+	height: 10px;
+}
+.ability{
+	background: #f3f3f3;
+	float: left;
+	width: 100%;
+	margin-left: 5px;
+}
+.new-ablity{
+	margin: 8% 10%;
+	padding-bottom: 3%;
+	border-bottom: dashed 2px black;
+}
+
+.fly-big{
+	margin-left: 5%;
+}
+.fly{
+	background: white;
+	font-family: "微软雅黑";
+}
+.fly h3{
+	text-align: center;
+	padding-top: 25px;
+	margin: 0px;
+}
+.fly p{
+	line-height: 25px;
+	padding: 5% 10%;
+}
+.xianwei{
+	margin-top: 6%;
+}
+
+
+.new{
+	margin-top: 5%;
+}
+.china-big{
+	margin-top: 10%;
+}
+.china{
+	
+}
+.china span{
+	font-size: 40px;
+	font-weight: bolder;
+	border: 1px solid #061F33;
+	padding: 1% 5%;
+	/*margin-left: 35%;*/
+}
+.china span a:link,.china span a:visited{
+	color: #061F33;
+	text-decoration: none;
+}
+.china span a:hover{
+	color: blue;
+}
+.china1 ul{
+	font-size: 20px;
+	margin-top: 10%;
+}
+.china1 ul li{
+	margin: 0 5%;
+}
+.china1 ul li a:link,.china1 ul li a:visited{
+	color: #122B40;
+	text-decoration: none;
+}
+.china1 ul li a:hover{
+	color: blue;
+	font-size: 22px;
+}
+@media screen and (max-width: 1000px) {
+  	.china1 ul{
+	font-size: 14px;
+	}
+	.china1 ul li a:hover{
+	color: blue;
+	font-size: 16px;
+}
+}
+.china-p{
+	margin-top: 5%;
+}
+.china-text a:link,.china-p a:visited{
+	color: #69606b;
+	text-decoration: none;
+}
+.china-text a:hover{
+	color: blue;
+}
+
+
+
+
+
+
+
+
+/*尾部*/
+.footer{padding-top: 40px;margin-top: 100px;background:#061f33 ;}
+.footer-2{position: relative;display: inline-block;padding-top: 40px;}
+#src2{
+	overflow: hidden;  
+    height: 44px;
+    border: solid 1px ;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 130px;
+    margin-top: 5px;
+    margin-left: 20px;
+    }
+.btn-search2 {width: 46px;height: 46px;display: block;text-align: center;background:url(../img/baike/ele.png) 0px -85px;margin-top: 5px;}
+
+.btn-search2{position: absolute;left: 130px;z-index: 100;cursor: pointer;}
+#movie{margin: 0px;padding: 0;}
+#movie li{margin-top: 5px;}
+#movie li a{padding-left: 5px;color: #5f5f6e;text-decoration: none;font-size: 15px;}
+#movie li a:hover{color: white;}
+
+.footer-3{margin-top: 30px;}
+h2{color: white;text-align: center;font-size: 18px;}
+.line{line-height: 40px;}
+
+.footer-4{margin-top: 30px;text-align: center;}
+.bottom{border-top: 1px solid #5f5f6e;margin-top: 20px;}
+.a p{
+	padding-top: 2%;
+}
+.a a{color:#5f5f6e ;text-decoration: none;margin-top: 5%;}
+.a a:hover{color: white;}

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百科_DC中文网 - DC中国粉丝的聚集地</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<!--以移动设备为优先， 屏幕和设备的屏幕保持一致，初始缩放为100% 禁止用户缩放-->
+		<title></title>
+		<!--引入外部bootstrap的css文件-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<!--先引入外部的jQuery文件再引入外部的js文件-->
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+		<script src="js/baike/wiki.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/baike/baike.css"/>
+		<link rel="stylesheet" type="text/css" href="css/baike/wiki.css"/>>
+		<!--<style type="text/css">
+			[class*='col-md']{
+				border:solid 1px pink;
+			}
+		</style>-->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!--头部-->
+			<div class="row head navbar-fixed-top">
+				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-12">
+					<p><a href="#"><img src="img/baike/dc2.png"/></a></p>
+				</div>
+				
+				<div class="col-md-8 col-sm-9 col-xs-12 nav-big">
+					<ul class="nav list-inline list-unstyled">
+						<li><a href="home.html">首页</a></li>
+						<li><a href="news.html">动态</a></li>
+						<li><a href="shipin1.html">视频</a></li>
+						<li><a href="video.html">影视</a></li>
+						<li><a href="baike.html" style="color: #66AFE9;">百科</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div class="row head-m" style="margin-top: 55px;">
+				<div class="col-md-5 col-md-offset-1  col-sm-7 col-xs-6">
+					<ul class="list-inline list-unstyled">
+						<li><a href="hero.html">英雄</a></li>
+						<li><a href="fanpai.html">反派</a></li>
+						<li><a href="team.html">团队</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5  col-sm-5 col-xs-6">
+					<div class="pull-right">
+						<input type="text" value="" />
+						<button type="button" class="btn btn-default search" aria-label="Left Align">
+						 	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		
+			<div class="row wiki-big">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="wiki-pho">
+						<img src="img/baike/herohead.png"/>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="wiki-caidan">
+						<ul class="list-inline list-unstyled pull-right">
+							<li><a href="#">首页</a></li>
+							<li>></li>
+							<li><a href="#" >百科</a></li>
+							<li>></li>
+							<li><a href="#">反派</a></li>
+							<li>></li>
+						</ul>
+					</div>				
+				</div>
+				
+				<div class="col-md-12 col-sm-12 col-xs-12 wiki-slide pull-left">
+					<!--轮播-->
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  	<!-- Indicators -->
+					  	<ol class="carousel-indicators">
+					    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					  	</ol>
+					
+					  	<!-- Wrapper for slides -->
+					  	<div class="carousel-inner" role="listbox">
+					   		<div class="item active">
+					    	  	<img src="img/baike/h1.jpg" class="img-responsive" width="100%" alt="...">
+					      		<div class="carousel-caption item-p">
+					        		<h3>莱克斯·卢瑟</h3>
+					        		<em></em>
+					        		<p>杀戮机器是登场于DC漫画大事件——“黑暗之夜：金属”的黑暗多元宇宙44号地球的邪恶版蝙蝠侠，是一个被移...</p>    		
+					      		</div>
+					    	</div>
+					    	<div class="item">
+					     		<img src="img/baike/h2.jpg" alt="...">
+					      		<div class="carousel-caption item-p">
+					        		<h3>梦魇蝙蝠侠——狂笑之蝠</h3>
+					        		<em></em>
+					        		<p>狂笑之蝠是登场于DC漫画大事件——“暗黑之夜：金属”的邪恶版蝙蝠侠，是小丑与蝙蝠侠的结合体，拥有小...</p>
+					      		</div>
+					    	</div>
+					    	<div class="item">
+					     		<img src="img/baike/h3.jpg" alt="...">
+					      		<div class="carousel-caption item-p">
+					        		<h3>梦魇蝙蝠侠——溺亡怨魂</h3>
+					        		<em></em>
+					        		<p>溺亡怨魂是登场于DC漫画大事件——“黑暗之夜：金属”的黑暗多元宇宙11号地球邪恶版蝙蝠侠，该平行宇宙是...</p> 
+					      		</div>
+					    	</div>
+					    	
+					  	</div>
+					
+					  	<!-- Controls -->
+					  	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					   		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    	<span class="sr-only">Previous</span>
+					  	</a>
+					  	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    	<span class="sr-only">Next</span>
+					  	</a>
+					</div>
+				</div>
+				
+				
+				<!--图片放大-->
+				<div class="col-md-12 col-sm-12 col-xs-12 pho-xbig">
+					<div class="col-md-6 col-sm-6 col-xs-12 pho-big">
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/1-1PRF91K2262.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>小丑</h5>
+							    </a>
+							    <p>蝙蝠侠——布鲁斯韦恩的头号死敌，他的真实姓名和身世至今仍是一个谜。常年稳居美媒票选的TOP100...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">小丑</a>
+								<a href="#">哥谭</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/2.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>拟声者——专门杀害超级英雄的反派</h5>
+							    </a>
+							    <p>在DC宇宙中，有一位令超级英雄心惊胆战的，他不是小丑，也不是毁灭日，而是心狠手辣的拟声者（...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">DC漫画</a>
+								<a href="#">拟声者</a>
+								<a href="#">DC反派</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/5.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>关于小丑的15个有趣事迹</h5>
+							    </a>
+							    <p>小丑可能是所有流行文化中最伟大的恶棍。自第一次登场以来。现在，DC中文网正在研究关于小丑身体...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">DC漫画</a>
+								<a href="#">DC反派</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/22.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>梦魇蝙蝠侠——蹂躏者</h5>
+							    </a>
+							    <p>蹂躏者是登场于DC漫画大事件——“暗黑之夜：金属”的黑暗多元宇宙1号地球的邪恶版蝙蝠侠，是毁灭...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">DC漫画</a>
+								<a href="#">DC反派</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/62.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>梦魇蝙蝠侠——红死魔</h5>
+							    </a>
+							    <p>红死魔是登场于DC漫画大事件——“暗黑之夜：金属”的黑暗多元宇宙52号地球邪恶版蝙蝠侠，是闪电...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">DC漫画</a>
+								<a href="#">拟声者</a>
+								<a href="#">DC反派</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="col-md-6 col-sm-6 col-xs-12 pho-big">
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/1-1P119163514b5.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>达克赛德</h5>
+							    </a>
+							    <p>是多元宇宙中最可怕的星球天启星的统治者，欧米茄效应的使用者，妄图夺取反生命方程式控制整个DC宇宙的邪神...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">达克赛德</a>
+								<a href="#">天启星</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/21.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>DC最有深度的反派为何如此癫狂，或许只是为了拆</h5>
+							    </a>
+							    <p>我们认识的小丑是这样的：随机、随性、随意地犯罪，小丑就犹如混沌本身，难以捉摸。所以大家就把...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">小丑</a>
+								<a href="#">致命玩笑</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/6.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>梦魇蝙蝠侠——狂笑之蝠梦魇蝙蝠侠——狂笑之蝠</h5>
+							    </a>
+							    <p>狂笑之蝠是登场于DC漫画大事件——“暗黑之夜：金属”的邪恶版蝙蝠侠，是小丑与蝙蝠侠的结合体，...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								
+								<a href="#">DC反派</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/63.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>梦魇蝙蝠侠——破晓诡灯</h5>
+							    </a>
+							    <p>破晓诡灯是登场于DC漫画大事件——“暗黑之夜：金属”的黑暗多元宇宙32号地球邪恶版蝙蝠侠，是扭...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">DC漫画</a>
+								
+								<a href="#">DC反派</a>
+							</div>
+						</div>
+						<!--1-->
+						<div class="panel">
+							<div class="panel-body text-center">
+								<a href=""><img src="img/baike/64.jpg" class="img-responsive"width="100%"/></a>
+							</div>
+							<div class="panel-text">
+								<a href="">
+							    	<h5>梦魇蝙蝠侠——溺亡怨魂</h5>
+							    </a>
+							    <p>溺亡怨魂是登场于DC漫画大事件——“黑暗之夜：金属”的黑暗多元宇宙11号地球邪恶版蝙蝠侠，该平...</p>
+							</div>
+							<div class="star-tab">
+								<em class="por"></em>
+								<a href="#">DC漫画</a>
+								
+								<a href="#">DC反派</a>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		
+			<!--右边-->
+			<div class="row wiki-small hidden-xs">
+				<div class="wiki-right">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/hotlist.jpg" class="img-responsive"/>
+					</div>
+					<div class="hero-man col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/h11.gif" class="img-responsive pull-left"/>
+						<h4><a href="#">蝙蝠侠</a></h4>
+						<p><a href="#">本名布鲁斯·韦恩，一到夜晚，他就是令罪犯闻风丧胆的黑暗骑士-蝙蝠侠。</a></p>
+					</div>
+					<div class="hero-man col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/h12.gif" class="img-responsive pull-left"/>
+						<h4><a href="#">超人</a></h4>
+						<p><a href="#">每在危难时刻，便穿上蓝色紧身衣，披上红色斗蓬，化身超人挺身而出，行侠仗义，拯救世人。</a></p>
+					</div>
+					<div class="hero-man col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/h13.gif" class="img-responsive pull-left"/>
+						<h4><a href="#">神奇女侠</a></h4>
+						<p><a href="#">宙斯和天堂岛亚马逊女王希波吕忒的私生女，拥有半神血统。女性超级英雄的代表人物。</a></p>
+					</div>
+					<div class="hero-man col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/h14.gif" class="img-responsive pull-left"/>
+						<h4><a href="#">闪电侠</a></h4>
+						<p><a href="#">巴里与神速力相连，速度快到能穿越时空，曾经因为穿越时间改变历史，而造成DC宇宙重启。</a></p>
+					</div>
+					<div class="hero-man col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/h15.gif" class="img-responsive pull-left"/>
+						<h4><a href="#">绿灯侠</a></h4>
+						<p><a href="#">哈尔·乔丹原本是飞机公司的试飞员，因其诚实、勇敢和无所畏惧的性格，被绿灯戒指选中。</a></p>
+					</div>
+					<div class="hero-man col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/h16.gif" class="img-responsive pull-left"/>
+						<h4><a href="#">海王/水行侠</a></h4>
+						<p><a href="#">是亚特兰蒂斯女王和慈恩港灯塔看守人的私生子，用友操控海洋生物的超能力。</a></p>
+					</div>
+					<div class="hero-man col-md-12 col-sm-12 col-xs-12">
+						<img src="img/baike/h17.gif" class="img-responsive pull-left"/>
+						<h4><a href="#">钢骨</a></h4>
+						<p><a href="#">一次意外，造就了他电子人的身躯，从此可以控制几乎所有电子设备，黑入目标系统。</a></p>
+					</div>
+				
+				
+				
+					<!--伸缩-->
+					<div class="hostlist">
+						<p class="hostlogo col-lg-12 col-md-12 col-sm-12 col-xs-12"><img src="img/baike/celebrityTop.jpg" class="img-responsive"/></p>
+						<ul class="list-unstyled"style="margin: 0 .8rem;">
+							<!--1-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>1</i>
+									<span class="title">乔斯·韦登退出《蝙蝠女》剧组</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/91.jpg" class="img-responsive img"/></a>
+										<em>1</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >乔斯·韦登退出《蝙蝠女》剧组</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">乔斯·韦登（Joss Whedon）退出DC电影《蝙蝠女（Batgirl）》导演之位了。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>		
+							</li>
+							<!--2-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>2</i>
+									<span class="title">“荒原狼”演员对电影最终呈现很失望</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/92.jpg" class="img-responsive img"/></a>
+										<em>2</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >“荒原狼”演员对电影最终呈现很失望</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">DC电影《正义联盟》一个新的短片展示了电影中大反派荒原狼的幕后制作过程。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--3-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>3</i>
+									<span class="title">来自地球的瑞安雷诺兹，请交还你的绿灯戒</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/93.jpg" class="img-responsive img"></a>
+										<em>3</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >来自地球的瑞安雷诺兹，请交还你的绿灯戒</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">即使他们曾试图将那枚戒指戴在那个手指上，但时至今日，华纳也知道这一切都结束了。所以现在华纳要求“死侍”的扮演者瑞安·雷诺兹将他的绿灯戒还回来。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--4-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>4</i>
+									<span class="title">CW正开发新DC剧集 火辣女侠行侠仗义</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/94.jpg" class="img-responsive img"/></a>
+										<em>4</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >CW正开发新DC剧集 火辣女侠行侠仗义</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">蝙蝠女侠将在这一次的“绿箭宇宙”交叉集中登场，但看起来CW似乎对这个即将深受欢迎的角色有更远的计划。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--5-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>5</i>
+									<span class="title">《神奇女侠1984》又加入一名新卡司</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/95.jpg" class="img-responsive img"/></a>
+										<em>5</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >《神奇女侠1984》又加入一名新卡司</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">华纳和DC不久前为《神奇女侠1984》添加了一名新演员——拉维·帕特尔（Ravi Patel），但目前为止官方并没有透露他所扮演的角色。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--6-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>6</i>
+									<span class="title">DC电影《小丑》疑似开拍</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/96.jpg" class="img-responsive img"/></a>
+										<em>6</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >DC电影《小丑》疑似开拍</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">之前有消息称DC独立电影《小丑》将于“两周内”开拍，而现在9月才刚过两天就收到了电影疑似开拍的信息。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--7-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>7</i>
+									<span class="title">DC美剧《绿箭侠》黑海妖将换服装了？</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/97.jpg" class="img-responsive img"/></a>
+										<em>7</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >DC美剧《绿箭侠》黑海妖将换服装了？</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#"> DC美剧《绿箭侠》的这一季已经为粉丝们提供了很多内容 - 例如很快就会涉及服装的改变。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--8-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>8</i>
+									<span class="title">DC电影《闪点》导演讲述与华纳接触过程</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/98.jpg" class="img-responsive img"/></a>
+										<em>8</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >DC电影《闪点》导演讲述与华纳接触过程</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">在DC漫画中，《闪点》讲述的是巴里·艾伦回到过去保护妈妈不被逆闪所杀，并且也可以让他父亲不会因为误判杀妻罪而被捕。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--9-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>9</i>
+									<span class="title">《闪电侠》巴里·艾伦找到了一份新工作</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/99.jpg" class="img-responsive img"/></a>
+										<em>9</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >《闪电侠》巴里·艾伦找到了一份新工作</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">在DC美剧《闪电侠》最新一集“Subject 9”中，巴里·艾伦（Barry Allen）发现自己失业了。不过在这一集的最后他找到了一份新工作——作为“伸缩人”拉尔夫·迪布尼（Ralph Dibney）的新搭档。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+							
+							<!--10-->
+							<li class="hosttxt-li col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="txt-div">
+									<b >|</b>
+									<i>10</i>
+									<span class="title">《女超人》回归预告放出新的威胁来袭</span>	
+								</div>
+								<div class="txt-div-hover col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="num col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<a href="#"><img src="img/baike/90.jpg" class="img-responsive img"/></a>
+										<em>10</em>
+									</p>
+									<div class="film-content col-lg-8 col-md-8 col-sm-8 col-xs-8">
+										<h3><a href="#" >《女超人》回归预告放出新的威胁来袭</a></h3>
+										<p class="li-text-txt"style="padding: 1rem 0;">
+											<a href="#">DC美剧《超级少女》官方刚刚放出了第三季14集的预告短片。</a>
+										</p>
+										<div class="li-text-tag"style="padding-bottom: .5rem;">
+											<span class="tagword">标签：</span>
+										</div>
+									</div>
+								</div>
+								
+							</li>
+						</ul>	
+					</div>
+				</div>				
+			</div>
+		
+			
+			<div style="clear: both;">
+				
+			</div>	
+			<!--底部-->
+			<div class="row footer" >
+				<div class="col-lg-offset-2 col-lg-2 col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 col-xs-12">
+					
+						<div class="footer-1 pull-left">
+							<img src="img/baike/dc1.jpg" class="img-responsive"/>
+						</div>
+				</div>	
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="footer-2 pull-left ">
+						<a class="btn-search2"></a>
+						<input type="text" name="" id="src2" value="" placeholder="搜索"/>
+						<ul id="movie">
+							<li>
+								<a href="">#秘密六人组</a>
+								<a href="">#DC美剧</a>
+								<a href="">#DC电影</a》
+							
+							</li>
+							<li>
+								<a href="">#自杀小队</a>
+								<a href="">#哥谭</a>
+								<a href="">#蝙蝠侠</a>
+								<a href="">#泰坦</a>
+							</li>
+							<li>
+								<a href="">#预告片</a>
+								<a href="">#海王	</a>
+								<a href="">#罗伯</a>
+								<a href="">#氪星</a>
+							</li>
+							<li>
+								<a href="">#猛禽小队</a>
+								<a href="">#DC动画</a>
+								<a href="">#哈莉奎因</a>
+							</li>
+							<li>
+								<a href="">#黑金丝雀</a>	
+								<a href="">#女猎手</a>
+								<a href="">#小丑</a>
+								<a href="">#逐星女</a>
+							</li>
+							<li>
+								<a href="">#正义联盟</a>
+								<a href="">#超人</a>
+							</li>
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+					<div class="footer-3 pull-left">
+						<h2>ABOUT US</h2>
+						<ul id="movie" class="line">
+							<li>
+								<a href="">关于DC中文网</a>																
+							</li>
+							
+							<li><a href="">投稿须知</a></li>
+							
+							<li><a href="">免责声明</a></li>
+							
+							<li><a href="">商务合作</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+					<div class="footer-4 pull-left">
+						<h2>LINK</h2>
+						<ul id="movie" class="line">
+							<li>
+								<a href="">动态</a>																
+							</li>
+						
+							<li><a href="">视频</a></li>
+							
+							<li><a href="">影视</a></li>
+							
+							<li><a href="">百科</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="row" style="background:#061f33 ;">
+				<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
+					<div class="bottom a">
+						<p style="color: #5f5f6el;">Copyright ? DC中文网 All rights reserved.</p>
+						<p><a href="">湘ICP备18000090号</a></p>
+					</div>
+				</div>
+			</div>
+		
+		
+		
+		
+		
+		<!--100%-->
+		</div>
+	</body>
+</html>

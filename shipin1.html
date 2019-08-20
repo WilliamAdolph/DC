@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>DC中文网_视频</title>
+		<!--<script type="text/javascript" src="DC1/slide/js/jquery-3.2.1.min.js" ></script>-->
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>-->
+		<script type="text/javascript" src="js/shipin1.js" ></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/shipin.css" />
+		<!--轮播图引用-->
+		<link rel="stylesheet" href="DC1/slide/less/index.css">
+	    <link rel="stylesheet" href="DC1/slide/less/slide.css">
+	    <link rel="stylesheet" href="DC1/slide/less/index.css">
+	    <script type="text/javascript" src="DC1/slide/js/slide.min.js" ></script>
+	    <script>
+		    $(function(){
+		        //3d
+		        $('#slide3d').slideCarsousel({slideType:'3d',indicatorEvent:'mouseover'});
+		        //2d
+		        var  sliderDescArr=[],i=0,len=10;
+		        for(;i<len;i++){
+		            sliderDescArr.push(new Array(10).join(''+i));
+		        }
+		        $('#sliderDesc').text(sliderDescArr[0]);
+		        $('#slide2d').slideCarsousel({callbackFunc:function(index){
+		            $('#sliderDesc1').text(sliderDescArr[index]);
+		        }});
+		    });
+		</script>
+		<!--媒体查询-->
+		<style>
+			/*top-1*/
+			@media screen and (max-width: 835px) {
+				.top-img img{width:100%;height:55px;}
+			}
+			@media screen and (max-width: 570px) {
+				.top-1 .top-ul1{position:fixed;width:100%;left:10%;z-index:2000;background:#242424;}
+				.top-img{display:none;}
+			}@media screen and (max-width: 450px) {
+				.top-1 .top-ul1{left:5%;}
+				.top-img{display:none;}
+			}@media screen and (max-width: 350px) {
+				.top-1 .top-ul1{left:2%;}
+				.top-img{display:none;}
+			}
+			/*top-2*/
+			@media screen and (max-width: 357px) {
+				.top-2-2{width:0%;}
+				.top2-input{width:50%;}
+			}
+			@media screen and (max-width: 1200px) {
+				.friend{width:735px;}
+			}
+			@media screen and (max-width: 751px) {
+				.friend{width:367px;}
+			}
+			@media screen and (max-width: 383px) {
+				.friend{width:100%;}
+			}
+			@media screen and (max-width: 550px) {
+				.latest1{width:60%;left:20%;}
+			}
+			@media screen and (max-width: 280px) {
+				.latest1{width:60%;left:10%;}
+			}
+			@media screen and (max-width: 991px) {
+				.dc2 .dc2-2 ul li a{font-size:12px;}
+				.bottom-1{min-height:250px;}
+			}
+			@media screen and (max-width:762px) {
+				.dc3 ul li{font-size:13px;}
+				.dc3 ul strong{font-size:15px;}
+				.dc4 ul li{font-size:13px;}
+				.dc4 ul strong{font-size:15px;}
+			}
+			@media screen and (max-width:660px) {
+				.dc2{width:15%;}
+				.dc2-1,.dc2-2{display:none;}
+			}
+			@media screen and (max-width:621px) {
+				.dc3 ul{padding-left:0;overflow:;}
+			}
+			@media screen and (max-width:478px) {
+				.dc3{width:35%;padding-left:10%;}
+			}
+			@media screen and (max-width:478px) {
+				.dc3{display:none;}
+				.dc4{display:none;}
+				.dc1{margin-left:23%;}
+			}
+			@media screen and (max-width:350px) {
+				.dc1{margin-left:17.7%;}
+			}
+		</style>
+		<!--左右切换-->
+		<!--<link rel="stylesheet" href="DC1/23675/css/chinaz.css" />
+		<script type="text/javascript" src="DC1/23675/js/3-panel-slider.js" ></script>
+		<script type="text/javascript" src="DC1/23675/js/jquery-ui-1.10.4.min.js" ></script>-->
+		<link rel="stylesheet" href="DC1/jiaoben3004/css/style.css" />
+		<script type="text/javascript" src="DC1/jiaoben3004/js/jquery.SuperSlide2.js" ></script>
+		<!--手风琴-->
+		<script src="DC1/jiaoben4054/fsbanner.js"></script> 
+		<link href="DC1/jiaoben4054/fsbanner.css" rel="stylesheet" type="text/css">
+		<!--底部-->
+		
+	</head>
+	<body>
+		<!--标题-->
+		<div class="container-fluid">
+			<!--头部导航栏-->
+			<div class="top">
+				<!--导航栏1-->
+				<div class="top-1 pull-left header-master">
+					<!--导航栏图片-->
+					<div class="top-img">
+						<img src="img/DC-logo.png"/>
+					</div>
+					<div class="h55" style="width:10%;float:left;"></div>
+					<!--导航栏1ul-->
+					<ul class="top-ul1">
+						<li><a href="home.html">首页</a></li>
+						<li><a href="news.html">动态</a></li>
+						<li><a href="shipin1.html" style="color: #66AFE9;">视频</a></li>
+						<li><a href="video.html">影视</a></li>
+						<li><a href="baike.html">百科</a></li>
+					</ul>
+				</div>
+				<!--导航栏2-->
+				<div class="top-2 pull-left">
+					<!--导航栏2ul-->
+					<ul class="top-ul2">
+						<li><a>预告</a></li>
+						<div class="w15 h35 pull-left"></div>
+						<li><a>采访&花絮</a></li>
+						<div class="w15 h35 pull-left"></div>
+						<li><a>图集</a></li>
+					</ul>
+					<div class="w15 h35 top-2-2" style="float:left;"></div>
+					<!--导航栏2input-->
+					<div class="top2-input">
+						<form>
+							<div class="form-group" style="height:35px;margin:0;">
+								<div class="input-group" style="height:35px;width:100%;	">
+									<input class="" type="search" class="form-control " name="" id="" value=""  style="width:70%;"/>
+									<input type="submit" value="" class="btn-default"  style="width:25%;height:31px;margin:2px 0 0 1px;border:none;background:#333333;background:url(img/searchBtn.jpg)no-repeat;background-size:35px 33px;"/>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--轮播图-->
+			<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="video">
+					<div class="bg">
+						<div class="banner">
+							<div id="slide3d" class="slide-carousel slide-3d">
+					            <ul  class="item-list clearfix" style="padding:0;">
+					                <li class="item0">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide1.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip6" style="display:none;">
+					                        	<a>《氪星》“猛男”罗伯定妆照放出</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item1">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide2.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip7" style="display:none;">
+					                        	<a>DC动画《哈莉奎茵》首款预告</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item2">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide3.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip1" style="display:none;">
+					                        	<a>《泰坦》主角预告及海报放出</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item3">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide4.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip2" style="display:none;">
+					                        	<a>《小丑》正常到邪恶的转变</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item4">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide5.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip3" style="display:none;">
+					                        	<a>《泰坦》：当新罗宾遇上前罗宾</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item5">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide6.jpg" alt="">
+					                        </a>
+					                        <div class="slide-tip4" style="display:none;">
+					                        	<a>《泰坦》将在国庆后开播并放出海报</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li class="item6">
+					                    <div class="item-content">
+					                        <a href="javascript:void(0);">
+					                            <img class="cover-img" src="img/slide7.jpg" alt="">
+					                        </a>
+					                         <div class="slide-tip5" style="display:none;">
+					                        	<a>《爱乐之城》的高司令演“蝙蝠侠”？</a>
+					                        </div>
+					                    </div>
+					                </li>
+					            </ul>
+					            <div class="indicator-list items">
+					                <a href="javascript:void(0);" data-slide-index="0" class="selected"><img src="img/slide3.jpg" class="slide-3"/></a>
+					                <a href="javascript:void(0);" data-slide-index="1"><img src="img/slide4.jpg" class="slide-4"/></a>
+					                <a href="javascript:void(0);" data-slide-index="2"><img src="img/slide5.jpg" class="slide-5"/></a>
+					                <a href="javascript:void(0);" data-slide-index="3"><img src="img/slide6.jpg" class="slide-6"/></a>
+					                <a href="javascript:void(0);" data-slide-index="4"><img src="img/slide7.jpg" class="slide-7"/></a>
+					                <a href="javascript:void(0);" data-slide-index="5"><img src="img/slide1.jpg" class="slide-1"/></a>
+					                <a href="javascript:void(0);" data-slide-index="6"><img src="img/slide2.jpg" class="slide-2"/></a>  
+					            </div>
+					            <!--<ul class="items">
+					            	<li><div><img src="img/slide3.jpg"/></div></li>
+					            	<li><div><img src="img/slide4.jpg"/></div></li>
+					            	<li><div><img src="img/slide5.jpg"/></div></li>
+					            	<li><div><img src="img/slide6.jpg"/></div></li>
+					            	<li><div><img src="img/slide7.jpg"/></div></li>
+					            	<li><div><img src="img/slide1.jpg"/></div></li>
+					            	<li><div><img src="img/slide2.jpg"/></div></li>
+					            </ul>-->
+					        </div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<!--正文-->
+		<div class="container">
+			<div class="row">
+				<!--预告-->
+				<img src="img/trailer.png" style="width:100%;"/>
+				<div class="friend">
+				    <div class="mr_frbox">
+				        <div class="frBtnL" style="background:#FFFFFF;"><img class="mr_frBtnL prev" src="DC1/jiaoben3004/images/mfrl.gif" /></div>
+				        <div class="mr_frUl">
+				            <ul id="mr_fu" style="height:100%;">
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide1.jpg"/></a>
+				                	<p><strong>《氪星》“猛男”罗伯定妆照放出</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide2.jpg" /></a>
+				                	<p><strong>DC动画《哈莉奎茵》首款预告</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide3.jpg" /></a>
+				                	<p><strong>《泰坦》主角预告及海报放出</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide4.jpg" /></a>
+				                	<p><strong>《小丑》正常到邪恶的转变</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				            </ul>
+				        </div>
+				        <div class="frBtnR" style="background: #FFFFFF;"><img class="mr_frBtnR next" src="DC1/jiaoben3004/images/mfrr.gif" /></div>
+				    </div>
+				</div>
+				<div style="height:60px;width:100%"></div>
+				<!--采访-->
+				<img src="img/interview.png" style="width:100%"/>
+				<div class="friend">
+				    <div class="mr_frbox">
+				        <div class="frBtnL" style="background:#FFFFFF;"><img class="mr_frBtnL prev" src="DC1/jiaoben3004/images/mfrl.gif" /></div>
+				        <div class="mr_frUl">
+				            <ul id="mr_fu" style="height:100%;">
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide11.jpg"/></a>
+				                	<p><strong>DC电影《正义联盟》超人和蝙蝠服装设计特辑</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide10.jpg" /></a>
+				                	<p><strong>DC电影《正义联盟》海王服装公布</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide7.jpg" /></a>
+				                	<p><strong>《爱乐之城》的高司令演“蝙蝠侠”？</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				                <li style="width:352px;">
+				                	<span class="poa" style="opacity: 0;"></span>
+				                	<a href="#"><img src="img/slide8.jpg" /></a>
+				                	<p><strong>乔·曼根尼罗确认DC电影《丧钟》</strong></p>
+				                	<em class="poa"></em>
+				                </li>
+				            </ul>
+				        </div>
+				        <div class="frBtnR" style="background: #FFFFFF;"><img class="mr_frBtnR next" src="DC1/jiaoben3004/images/mfrr.gif" /></div>
+				    </div>
+				</div>
+				<div style="width:100%;height:60px;"></div>
+				<!--图集-->
+				<img src="img/picture.png" style="width:100%;"/>
+				<div style="width:100%;height:35px;"></div>
+				<div class="fsbanner" id="demo-3" style="height:520px;width:100%;">
+				    <div style="background-image:url(img/slide13.jpg)">
+				    	<span class="name">《闪电侠》</span>
+				    	<p class="info1" style="">
+				    		<span><a style="color: #fff;">图集</a></span>
+				    		<b class="caret" style="border-top: 10px dashed;border-right: 10px solid transparent;border-left: 10px solid transparent;color:#789b37;margin-top:-20px;"></b>
+				    		<strong>《氪星》“猛男”罗伯定妆照放出</strong>
+				    	</p>
+				    </div>
+				    <div style="background-image:url(img/slide12.jpg)">
+				    	<span class="name">《康斯坦丁》</span>
+				    	<p class="info1" style="">
+				    		<span><a style="color: #fff;">图集</a></span>
+				    		<b class="caret" style="border-top: 10px dashed;border-right: 10px solid transparent;border-left: 10px solid transparent;color:#789b37;margin-top:-20px;"></b>
+				    		<strong>DC动画电影《康斯坦丁》首款预告发布</strong>
+				    	</p>
+				    </div>
+				    <div style="background-image:url(img/slide14.jpg)">
+				    	<span class="name">《海王》</span>
+				    	<p class="info1" style="">
+				    	<span><a style="color: #fff;">图集</a></span>
+				    	<b class="caret" style="border-top: 10px dashed;border-right: 10px solid transparent;border-left: 10px solid transparent;color:#789b37;margin-top:-20px;"></b>
+			    		<strong>《雷霆沙赞！》和《海王》的新剧照</strong></p>
+				    </div>
+				    <div style="background-image:url(img/slide6.jpg)">
+				    <span class="name">《泰坦》</span>
+				    <p class="info1" style="">
+				    	<span><a style="color: #fff;">图集</a></span>
+				    	<b class="caret" style="border-top: 10px dashed;border-right: 10px solid transparent;border-left: 10px solid transparent;color:#789b37;margin-top:-20px;"></b>
+			    		<strong>《泰坦》将在国庆后开播并放出了新的角色海报</strong>
+				    </p>
+				    </div>
+			  	</div>
+				<!--最新-->
+				<div class="" style="width:100%;height:60px;"></div>
+				<div style="width:100%;height:100px;text-align:center;">
+				<!--<div class="" style="width:35%;height:100px;float:left;"></div>-->
+				<img src="img/latest.png" style="width:30%;min-height:55px;"/>
+				<!--<div class="" style="width:35%;height:100px;float:left;"></div>-->
+				</div>
+				<div class="" style="width:100%;height:20px;"></div>
+				<div class="latest">
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide1.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>《氪星》“猛男”罗伯定</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide2.jpg" class="img-responsive"/>
+						<!--<img src="img/slide1.jpg"/>-->
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>DC动画《哈莉奎茵》首款预告</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide3.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>《泰坦》新预告放出</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide4.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>《小丑》正常到邪恶的转变</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide5.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>《泰坦》新片段：当新罗宾</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide6.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>《泰坦》将在国庆后开播</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide7.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>《爱乐之城》的高司令</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide8.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>乔·曼根尼罗确认DC电影《丧钟》</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide9.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>DC和漫威超级英雄合唱的歌曲</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide10.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>DC电影《正义联盟》海王服装设计</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide11.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>DC电影《正义联盟》超人</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+					<div class="latest1 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/slide12.jpg" class="img-responsive"/>
+						<span class="poa" style="opacity: 0;"></span>
+						<p><strong>DC动画电影《康斯坦丁》</strong></p>
+						<em class="poa" style="opacity: 0;"></em>
+					</div>
+				</div>
+			  	<script>
+					$('#demo-1').fsBanner();
+					$('#demo-2').fsBanner();
+					$('#demo-3').fsBanner({'trigger':'mouse'});
+				</script>
+			</div>
+		</div>
+		<div class="h35" style="width:100%"></div>
+		<!--底部-->
+		<div class="" style="height:auto;background-color: #061f33;width:100%;">
+			<div class="container" style="height:auto;background-color: #061f33;">
+				<div class="video-bottom">
+					<div class="bottom-1">
+						<div class="dc1">
+							<img src="img/dc1.jpg" style="width:100%;min-height: 175px;min-width: 175px;"/>
+						</div>
+						<div class="dc2">
+							<div class="dc2-1">
+								<input type="text" class=""/>
+								<b></b>
+							</div>
+							<div class="dc2-2">
+								<ul>
+									<li><a>#DC电影</a></li>
+									<li><a>#预告片</a></li>
+									<li><a>#海王</a></li>
+									<li><a>#DC美剧</a></li>
+									<li><a>#氪星</a></li>
+									<li><a>#罗伯</a></li>
+									<li><a>#泰坦</a></li>
+									<li><a>#猛禽小队</a></li>
+									<li><a>#DC动画</a></li>
+									<li><a>#哈莉奎茵</a></li>
+									<li><a>#蝙蝠侠</a></li>
+									<li><a>#黑金丝雀</a></li>
+									<li><a>#小丑</a></li>
+									<li><a>#逐星女</a></li>
+									<li><a>#正义联盟</a></li>
+									<li><a>#超人</a></li>
+									<li><a>#自杀小队</a></li>
+									<li><a>#罗宾</a></li>
+									<li><a>#绿箭宇宙</a></li>
+									<li><a>#女猎手</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dc3">
+							<ul>
+								<strong>ABOUT US</strong>
+								<li>关于DC中文网</li>
+								<li>投稿须知</li>
+								<li>免责声明</li>
+								<li>商务合作</li>
+							</ul>
+						</div>
+						<div class="dc4">
+							<ul>
+								<strong>LINKS</strong>
+								<li>动态</li>
+								<li>视频</li>
+								<li>影视</li>
+								<li>百科</li>
+							</ul>
+						</div>
+					</div>
+					<div class="" style="width:100%;height:5px;"></div>
+					<div class="bottom-2">
+						<p style="color:#5f5f6e;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;">Copyright © <a href="#" target="">DC中文网</a> All rights reserved.</p>
+						<p><span><a href="" target="">湘ICP备18000090号</a></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

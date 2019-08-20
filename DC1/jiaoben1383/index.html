@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>jQuery����ͼƬ����չʾ - վ���ز�</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le styles -->
+    <link href="demo/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="demo/assets/css/style.css" />
+    
+    <link rel="stylesheet" href="css/lush.animations.css" />        
+    <link rel="stylesheet" href="css/lush.min.css" />
+    
+    <link href="demo/assets/css/bootstrap-responsive.css" rel="stylesheet">  
+	
+	<style>
+		
+		#carousel-1 img {
+			border: 1px solid rgba(0, 0, 0, 0.2);
+		}
+		
+	</style>
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<!--<script src="ga.js"></script>-->
+  </head>
+
+  <body>
+    
+    
+    
+    <div class="container">
+
+      <div class="masthead">
+        <h2 class="muted"></h2>
+
+      </div>
+
+		<ul class="lush-slider flat no-shadow" style="max-width: 700px" id="carousel-1"
+        data-base-width="1100" data-base-height="220">
+		    <li 
+		    	data-slide-in="at 0  from back use easeOutExpo during 1000" 
+		    	data-slide-out="at 100 to bottom use easeInExpo during 500">
+		        
+		        <img src="carousel/carousel1.jpg" class="img-polaroid" style="top: 38px; left: 224px; " />
+		        <img src="carousel/carousel2.jpg" class="img-polaroid" style="top: 38px; left: 448px; " />
+		        <img src="carousel/carousel3.jpg" class="img-polaroid" style="top: 38px; left: 672px; " />
+		        
+		        
+		    </li>			
+		    <li 
+		    	data-slide-in="at 0  from back use easeOutExpo during 1000" 
+		    	data-slide-out="at 100 to bottom use easeInExpo during 500">
+		        
+		        <img src="carousel/carousel4.jpg" class="img-polaroid" style="top: 38px; left: 224px; " />
+		        <img src="carousel/carousel2.jpg" class="img-polaroid" style="top: 38px; left: 448px; " />
+		        <img src="carousel/carousel5.jpg" class="img-polaroid" style="top: 38px; left: 672px; " />
+		        
+		    </li>
+
+		</ul>
+
+      <hr>
+
+
+		<ul class="lush-slider flat dark no-shadow" style="max-width: 700px" id="carousel-2"
+        data-base-width="1100" data-base-height="220">
+		    <li 
+		    	data-slide-in="plus 100 from right use easeOutExpo during 1000" 
+		    	data-slide-out="plus 100 to left use easeInExpo during 500">
+		        
+		        <img src="carousel/carousel1.jpg" class="img-polaroid" style="top: 38px; left: 224px; " />
+		        <img src="carousel/carousel2.jpg" class="img-polaroid" style="top: 38px; left: 448px; " />
+		        <img src="carousel/carousel3.jpg" class="img-polaroid" style="top: 38px; left: 672px; " />
+		        
+		    </li>			
+		    <li 
+		    	data-slide-in="plus 100 from right use easeOutExpo during 1000" 
+		    	data-slide-out="plus 100 to left use easeInExpo during 500">
+		        
+		        <img src="carousel/carousel4.jpg" class="img-polaroid" style="top: 38px; left: 224px; " />
+		        <img src="carousel/carousel2.jpg" class="img-polaroid" style="top: 38px; left: 448px; " />
+		        <img src="carousel/carousel5.jpg" class="img-polaroid" style="top: 38px; left: 672px; " />
+		        
+		        
+		    </li>
+
+		</ul>
+		
+    <div id="feat"></div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="demo/assets/js/jquery.js"></script>
+    <script src="demo/assets/js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery.lush.js"></script>
+    <script>
+			$(function(){
+
+            $('#feat').load('features.html')
+
+	            $('#carousel-1, #carousel-2').lush({
+			            manual: true,
+			            slider: {
+		            		pauseOnHover: true,
+                    keyboard: false,
+		            		pager: false,
+                    carousel: true
+		            	}
+	            	})
+	            	
+	            })
+
+    </script>
+<div style="text-align:center;clear:both">
+<p>�����������FireFox��Chrome��Safari��Opera�����Ρ��ѹ�. ��֧��IE8��360������֮����</p>
+<p>��Դ��<a href="http://sc.chinaz.com/" target="_blank">վ���ز�</a></p>
+</div>
+  </body>
+</html>

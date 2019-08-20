@@ -1,0 +1,240 @@
+/*<!--栅格对照-->*/
+[class*='col-md']{
+	/*border:solid 1px pink;*/
+	padding: 0px;
+}
+body{
+	font-family: "arial, helvetica, sans-serif" "microsoft yahei" arial;
+}
+body,div,p,ul,li{
+	margin: 0px;padding: 0px;
+	
+}
+
+
+
+/*回到顶部*/
+#rocket-to-top div {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+}
+#rocket-to-top .level-2 {
+    background: url(../img/news/o_rocket_button_up.png) no-repeat scroll -149px 0 transparent;
+    display: none;
+    height: 150px;
+    opacity: 0;
+    z-index: 1;
+}
+#rocket-to-top .level-3 {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 150px;
+    z-index: 2;
+}
+#rocket-to-top {
+    background: url(../img/news/o_rocket_button_up.png) no-repeat scroll 0 0 transparent;
+    cursor: default;
+    display: block;
+    height: 150px;
+    margin: -125px 0 0;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 90%;
+    width: 110px;
+    z-index: 11;
+}
+
+
+
+
+
+.container-fluid{
+	padding: 0px;margin: 0px;
+}
+
+/*1、顶部/头部导航栏（logo&导航）--------------------------------------------------------------*/
+.head-nav{
+    width: 100%;
+    background-color: #061f33;
+}
+.head-nav-fixed{
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+/*logo-----------------------------------------*/
+
+.head-nav .p1{
+	text-align: center;
+}
+/*导航------------------------------------------*/
+.navbar{
+	margin: 0px;
+}
+.nav-ul,.nav-ul>li,.nav-ul>li>a{
+	/*width: 40%;*/
+	border-bottom: 0px;
+	padding-top: 0px;padding-bottom: 0px;
+}
+.nav-ul>li{
+	width: 15%;
+	text-align: center;
+}
+/*当宽度为手机屏幕时*/
+@media screen and (max-width: 768px) {
+	.nav-ul>li{
+		width: 18.2%;
+		padding: 0px;
+	}
+}
+.nav-ul>li>a{
+	line-height: 55px;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*.nav-ul>li>.color-a:link,.nav-ul>li>.color-a:visited{
+	color: #66AFE9;text-decoration: none;
+}
+.nav-ul>li>.color-a:hover{
+	color: #FF0000;
+}*/
+.nav-ul>li>a:link,.nav-ul>li>a:visited{
+	color: #fffefe;text-decoration: none;
+}
+.nav-ul>li>a:hover{
+	color: #FF0000;
+}
+
+
+
+/*-2、顶部/头部搜索栏（动态分类<电影/剧集/漫画>&搜索框）--------------------------------------------------------------*/
+.news-search{
+	width: 100%;
+	
+	background: #222a35;
+}
+/*动态分类<电影/剧集/漫画-------------------------------*/
+.search-class{
+	text-align: center;
+}
+.search-ul{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	/*text-align: right;*/
+}
+.search-ul>li{
+	width: 32%;
+	/*text-align: right;*/
+}
+.search-ul>li>a:link,.search-ul>li>a:visited{
+	color: #b1bcce;text-decoration: none;
+}
+.search-ul>li>a:hover{
+	color: #FF0000;
+}
+
+/*搜索框------------------------------------------------*/
+.search-in{
+	height: 32px;
+	margin-top: 3px;
+}
+.form-right{
+	float: right;height: 32px;
+	margin-right: 15px;
+}
+.search{
+	position: relative;top: -5px;
+	border: 1px;
+	padding-left: 5px;height: 28px;
+}
+.search-logo{
+	border: 0px;padding: 0px;
+	outline: none;
+	width: 25px;height: 25px;
+	background: url(../img/news/searchBtn.jpg) no-repeat 0px 2px ;
+	background-size: cover;
+}
+
+
+
+
+/*6、底部---------------------------------------------------*/
+.foot{
+	height: auto;
+	width: 100%;
+}
+.foot .footer{padding-top: 40px;margin-top: 50px;height: auto;background:#061f33}
+.foot .footer-2{position: relative;display: inline-block;padding-top: 40px;}
+.foot #src2{
+	overflow: hidden;  
+    height: 44px;
+    border: solid 1px ;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 130px;
+    margin-top: 5px;
+    margin-left: 20px;
+    }
+.foot .btn-search2 {width: 46px;height: 46px;display: block;text-align: center;background:url(../img/news/ele.png) 0px -85px;margin-top: 5px;}
+
+.foot .btn-search2{position: absolute;left: 130px;z-index: 100;cursor: pointer;}
+.foot #movie{margin: 0px;padding: 0;}
+.foot #movie li{margin-top: 5px;}
+.foot #movie li a{padding-left: 5px;color: #5f5f6e;text-decoration: none;font-size: 1.5rem;}
+.foot #movie li a:hover{color: white;}
+
+.foot .footer-3{margin-top: 30px;}
+.foot h2{color: white;text-align: center;font-size: 18px;}
+.foot .line{line-height: 40px;}
+
+.foot .footer-4{margin-top: 30px;text-align: center;}
+.foot .bottom{border-top: 1px solid #5f5f6e;margin-top: 20px;}
+.foot .a a{color: white;text-decoration: none;font-size: 1.5rem;}
+/*.a a:hover{color: white;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
